@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="card/styles.css" />
+    <link rel="stylesheet" href="cube/styles.css" />
+    <link rel="stylesheet" href="carousel/styles.css" />
+  </head>
+  <body>
+    <section>
+      <p>
+        Following from <a href="https://3dtransforms.desandro.com/">here</a>.
+      </p>
+      <hr />
+    </section>
+    <section>
+      <h1>Card</h1>
+      <button>flip bait</button>
+      <div class="card-scene">
+        <div class="card">
+          <div class="card__face card__face--front">front</div>
+          <div class="card__face card__face--back">back</div>
+        </div>
+      </div>
+      <hr />
+    </section>
+
+    <section>
+      <h1>Cube</h1>
+      <div class="cube-scene">
+        <div class="cube">
+          <div class="cube__face cube__face--front">front</div>
+          <div class="cube__face cube__face--back">back</div>
+          <div class="cube__face cube__face--right">right</div>
+          <div class="cube__face cube__face--left">left</div>
+          <div class="cube__face cube__face--top">top</div>
+          <div class="cube__face cube__face--bottom">bottom</div>
+        </div>
+      </div>
+      <p class="radio-group">
+        <label>
+          <input type="radio" name="rotate-cube-side" value="front" checked />
+          front
+        </label>
+        <label>
+          <input type="radio" name="rotate-cube-side" value="right" /> right
+        </label>
+        <label>
+          <input type="radio" name="rotate-cube-side" value="back" /> back
+        </label>
+        <label>
+          <input type="radio" name="rotate-cube-side" value="left" /> left
+        </label>
+        <label>
+          <input type="radio" name="rotate-cube-side" value="top" /> top
+        </label>
+        <label>
+          <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
+        </label>
+      </p>
+      <hr />
+    </section>
+
+    <section>
+      <h1>Carousel</h1>
+      <div class="carousel-scene">
+        <div class="carousel">
+          <div class="carousel__cell">1</div>
+          <div class="carousel__cell">2</div>
+          <div class="carousel__cell">3</div>
+          <div class="carousel__cell">4</div>
+          <div class="carousel__cell">5</div>
+          <div class="carousel__cell">6</div>
+          <div class="carousel__cell">7</div>
+          <div class="carousel__cell">8</div>
+          <div class="carousel__cell">9</div>
+        </div>
+      </div>
+
+      <p style="text-align: center">
+        <button class="carousel-previous-button">Previous</button>
+        <button class="carousel-next-button">Next</button>
+      </p>
+
+      <hr />
+    </section>
+
+    <script src="card/index.js"></script>
+    <script src="cube/index.js"></script>
+    <script src="carousel/index.js"></script>
+  </body>
+</html>
